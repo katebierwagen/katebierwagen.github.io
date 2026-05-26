@@ -3,12 +3,18 @@ project:
   output-dir: docs
 
 website:
-  title: "katebierwagen.github.io"
+  title: "Kate Bierwagen"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
+      - href: adventures.qmd
+        text: Adventures
 
 format:
   html:
