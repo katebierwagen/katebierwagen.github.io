@@ -1,9 +1,28 @@
 ---
 title: "Kate Bierwagen"
-about: solana
+image: images/headshot.jpeg
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/katebierwagen/
+      target: _blank
+    - text: GitHub
+      href: https://github.com/katebierwagen
+      target: _blank 
+    - text: Email
+      href: mailto:kbierwagen@ucsb.edu
+
 
 ---
 
-This is a Quarto website.
+# Welcome!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hello! My name is Kate Bierwagen and I am currently a third year student at UCSB studying Environmental Studies. This website serves as a portfolio of my academic achievements as well as my personal achievements. 
+
+---
+
+
