@@ -2,6 +2,7 @@
 title: "Adventures"
 format: html
 ---
+Here are a list of some of the adventures I have done in the past couple years. I love exploring and traveling and hope to do more in the coming years.
 
 Nepal
 --
@@ -40,10 +41,11 @@ In the spring of my freshman year, I summited Mt. Whitney! This was my first rea
 
 :::
 
-
-Half Dome
---
-
-
 Indonesia
 --
+After I stayed in Thailand, I was fortunate to travel to Indonesia, where I spent most of my time enjoying the natural beauty and surfing.
+
+:::: {layout-ncol=2}
+![](images/waterfall-indo.jpeg)
+
+![](images/surfing.jpeg)
