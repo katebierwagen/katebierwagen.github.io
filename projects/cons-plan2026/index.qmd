@@ -1,0 +1,11 @@
+---
+title: "Goleta Beach Conservation Plan"
+description: "A written conservation plan for my ENVS 137: Conservation Planning class focused on sediment disposal at Goleta Beach."
+format: html
+image: goleta-beach.png
+categories: [Miradi, Planning]
+---
+
+[View](es137_final_proj.pdf){target="_blank"}
+
+![](es137_final_proj.pdf){width="100%" height="700px"}

@@ -1,0 +1,19 @@
+---
+title: "ENVS193DS Midterm Project"
+Description: "A midterm project for ENVS193: Statistics for Environmental Science"
+format: html
+image: midterm_thumbnail.png
+Categories: [R, Data Visualization, Quarto]
+---
+
+## Context
+
+The directions for this assignment are 
+
+
+## Product
+
+The final rendered product is [Here](envs_193midterm){target="_blank"}
+
+
+![](envs_193midterm.pdf){width="100%" height="700px"}
