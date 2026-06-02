@@ -15,14 +15,17 @@ website:
         text: Resume
       - href: adventures.qmd
         text: Adventures
-
 format:
   html:
-    theme:
+    theme: 
       - cosmo
-      - brand
-    css: styles.css
-    toc: true
+      - styles.scss
+    mainfont: Playfair Display
+    css: styles.scss
+    code-fold: true
+
+
+
 
 
 
