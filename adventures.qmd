@@ -1,8 +1,71 @@
 ---
-title: "Adventures"
+title: "Travels"
 format: html
 ---
-Here are a list of some of the adventures I have done in the past couple years. I love exploring and traveling and hope to do more in the coming years.
+
+In Fall of 2025, I was very fortunate to travel around Asia and Southeast Asia for a little bit. It started in Nepal where I did a study-abroad program and then traveled to a couple places after. Below is a map of all the cities I traveled to from October-December!
+
+```{r}
+#| message: false
+# load packages
+library(leaflet)
+library(tidyverse)
+library(janitor)
+library(leaflet.extras)
+library(dplyr)
+```
+
+```{r}
+#| message: false
+# reading in data
+travels <- read_csv("files/southeast-asia-travels_updated.csv")
+
+# cleaning column names
+travels_clean <- travels |> 
+clean_names()
+
+travel_icon <- makeIcon(
+  iconUrl = ("location_pin.png"),
+  iconWidth = 35,
+  iconHeight = 35
+)
+
+# initialize map
+site_map <- leaflet() |> 
+  
+  # addding base map tiles 
+  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI World Imagery") |> 
+  addProviderTiles(providers$Esri.OceanBasemap, group = "ESRI Oceans") |>  
+  
+  # adding mini map
+  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) |>  
+  
+  # set view over Asia
+  setView(lng = 105.99, lat = 15.87, zoom = 3) |>  
+  
+  # add country markers
+  addMarkers(data = travels_clean, group = "Travel Sites",
+             icon = travel_icon,
+             lng = ~long, 
+             lat = ~lat,
+             popup = paste("Place:", travels_clean$city, ",", travels_clean$country, "<br>",
+              "Coordinates (lat/long):", travels_clean$lat, ",", travels_clean$long)) |> 
+
+  # add layers control (toggle base map tiles & markers based on group IDs)
+  addLayersControl(
+    baseGroups = c("ESRI World Imagery", "ESRI Oceans"),
+    overlayGroups = c("Travel Sites")) |> 
+  # add reset map button
+  leaflet.extras::addResetMapButton()
+
+# print map
+site_map
+
+```
+
+
+
+Here is a compilation of photos from those travels and a little bit more about them.
 
 Nepal
 --
@@ -27,18 +90,6 @@ After Nepal, I travelled to both Bangkok, Thailand and an island on the Southeas
 ![](images/thailand-temple.jpeg)
 
 ![](images/scuba-thailand.jpg)
-:::
-Mt. Whitney
---
-
-In the spring of my freshman year, I summited Mt. Whitney! This was my first real experience with mountaineering. It was difficult but very worth it!
-
-::: {layout-ncol=2}
-
-![](images/whitney.jpeg)
-
-![](images/whitney-summit.jpg)
-
 :::
 
 Indonesia
