@@ -19,10 +19,14 @@ about:
 
 ---
 
-# Welcome!
+Welcome!
+--
 
 Hello! My name is Kate Bierwagen and I am currently a third year student at UCSB studying Environmental Studies. This website serves as a portfolio of my academic achievements as well as my personal achievements. 
 
----
 
 
+Research
+--
+
+I am currently a Scientific Diver for Santa Barbara Coastal LTER and have worked in the Caselle Lab at UCSB where I examined video footage of Rockfish species. I am very interested in fisheries management and exploring the role science can play in creating sustainable ocean solutions.
