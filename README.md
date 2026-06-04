@@ -1,10 +1,8 @@
 # katebierwagen.github.io
-Personal Website 
-
-# General information
+## General information
 This Repo is for a personal website I created and contains all the folders, files, and images. This is my personal repo.
 
-# Data and file information
+## Data and file information
 - All files and the data for my interactive map are stored in `files` folder.
 - All images displayed are in `images` folder.
 - styles.scss contains the font and colors I used to customize the display of my website.
@@ -12,5 +10,5 @@ This Repo is for a personal website I created and contains all the folders, file
 - Each .qmd contains the files and code for that specific page
   
 
-# Rendered output
-Link to the rendered output. Make sure it is a working url. You can test this by sharing the url with someone else to open on their computer - if it doesn't work, that means your GitHub pages set up didn't work.
+## Rendered output
+The link to my personal website is [here](https://katebierwagen.github.io/)
