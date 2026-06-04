@@ -4,13 +4,167 @@
     "href": "index.html",
     "title": "Kate Bierwagen",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Hello! My name is Kate Bierwagen and I am currently a third year student at UCSB studying Environmental Studies. This website serves as a portfolio of my academic achievements as well as my personal achievements."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "I love all things outdoors! Whether it is backpacking, camping, surfing, SCUBA Diving, or hiking, I enjoy it all and feel my happiest outdoors. One of my all-time favorite places to go is Big Sur! I also like to do yoga as well as bake dishes."
+  },
+  {
+    "objectID": "about.html#hobbies",
+    "href": "about.html#hobbies",
+    "title": "About",
+    "section": "",
+    "text": "I love all things outdoors! Whether it is backpacking, camping, surfing, SCUBA Diving, or hiking, I enjoy it all and feel my happiest outdoors. One of my all-time favorite places to go is Big Sur! I also like to do yoga as well as bake dishes."
+  },
+  {
+    "objectID": "about.html#food",
+    "href": "about.html#food",
+    "title": "About",
+    "section": "Food",
+    "text": "Food\nI love cooking and sharing food with my friends! It is, in my opinion, a universal love that everyone can enjoy. Whenever I can, I try to host a potluck. Here are some of the few I have done.\n\n\n\n\n\n\nSushi Night With my roomates!\n\n\n\n\n\n\n\nCharcuterie I made for a friend’s birthday\n\n\n\n\n\n\n\nAn easter brunch I helped organize with some friends"
+  },
+  {
+    "objectID": "about.html#nols",
+    "href": "about.html#nols",
+    "title": "About",
+    "section": "NOLS",
+    "text": "NOLS\n\n\nIn high school, I completed a 30-day long backpacking course through the National Outdoor Leadership School (NOLS) in the North Cascades of Washington and Okenagon-Wenatchee National Forest.\nThis was the first time I ever went backpacking and where my love for camping and outdoors really flourished. I learned so many skills both about backpacking but also group dynamics that I still use today."
+  },
+  {
+    "objectID": "about.html#my-plans",
+    "href": "about.html#my-plans",
+    "title": "About",
+    "section": "My Plans",
+    "text": "My Plans"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Updated May 2026. View"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "projects/cons-plan2026/index.html",
+    "href": "projects/cons-plan2026/index.html",
+    "title": "Goleta Beach Conservation Plan",
+    "section": "",
+    "text": "View"
+  },
+  {
+    "objectID": "projects/envs193ds-midterm/index.html",
+    "href": "projects/envs193ds-midterm/index.html",
+    "title": "ENVS193DS Midterm Project",
+    "section": "",
+    "text": "The directions for this assignment are at this page."
+  },
+  {
+    "objectID": "projects/envs193ds-midterm/index.html#context",
+    "href": "projects/envs193ds-midterm/index.html#context",
+    "title": "ENVS193DS Midterm Project",
+    "section": "",
+    "text": "The directions for this assignment are at this page."
+  },
+  {
+    "objectID": "projects/envs193ds-midterm/index.html#product",
+    "href": "projects/envs193ds-midterm/index.html#product",
+    "title": "ENVS193DS Midterm Project",
+    "section": "Product",
+    "text": "Product\nThe final rendered product is Here"
+  },
+  {
+    "objectID": "adventures.html",
+    "href": "adventures.html",
+    "title": "Travels",
+    "section": "",
+    "text": "In Fall of 2025, I was very fortunate to travel around Asia and Southeast Asia for a little bit. It started in Nepal where I did a study-abroad program and then traveled to a couple places after. Below is a map of all the cities I traveled to from October-December!\nCode\n# load packages\nlibrary(leaflet)\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(leaflet.extras)\nlibrary(dplyr)\nCode\n# reading in data\ntravels &lt;- read_csv(\"files/southeast-asia-travels_updated.csv\")\n\n# cleaning column names\ntravels_clean &lt;- travels |&gt; \nclean_names()\n\ntravel_icon &lt;- makeIcon(\n  iconUrl = (\"location_pin.png\"),\n  iconWidth = 35,\n  iconHeight = 35\n)\n\n# initialize map\nsite_map &lt;- leaflet() |&gt; \n  \n  # addding base map tiles \n  addProviderTiles(providers$Esri.WorldImagery, group = \"ESRI World Imagery\") |&gt; \n  addProviderTiles(providers$Esri.OceanBasemap, group = \"ESRI Oceans\") |&gt;  \n  \n  # adding mini map\n  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) |&gt;  \n  \n  # set view over Asia\n  setView(lng = 105.99, lat = 15.87, zoom = 3) |&gt;  \n  \n  # add country markers\n  addMarkers(data = travels_clean, group = \"Travel Sites\",\n             icon = travel_icon,\n             lng = ~long, \n             lat = ~lat,\n             popup = paste(\"Place:\", travels_clean$city, \",\", travels_clean$country, \"&lt;br&gt;\",\n              \"Coordinates (lat/long):\", travels_clean$lat, \",\", travels_clean$long)) |&gt; \n\n  # add layers control (toggle base map tiles & markers based on group IDs)\n  addLayersControl(\n    baseGroups = c(\"ESRI World Imagery\", \"ESRI Oceans\"),\n    overlayGroups = c(\"Travel Sites\")) |&gt; \n  # add reset map button\n  leaflet.extras::addResetMapButton()\n\n# print map\nsite_map\nHere is a compilation of photos from those travels and a little bit more about them."
+  },
+  {
+    "objectID": "adventures.html#nepal",
+    "href": "adventures.html#nepal",
+    "title": "Travels",
+    "section": "Nepal",
+    "text": "Nepal\nIn Fall of 2025, I had the chance to a field study program in the Manaslu Region of Nepal. We studied climactic vulnerabilities and Himalayan habitats. This experience was truly life changing, having the opportunity to immersed in the culture and see the landscapes in Nepal is something I will always remember."
+  },
+  {
+    "objectID": "adventures.html#thailand",
+    "href": "adventures.html#thailand",
+    "title": "Travels",
+    "section": "Thailand",
+    "text": "Thailand\nAfter Nepal, I travelled to both Bangkok, Thailand and an island on the Southeast part of Thailand called Koh Tao where I spent two weeks and did some SCUBA diving."
+  },
+  {
+    "objectID": "adventures.html#mt.-whitney",
+    "href": "adventures.html#mt.-whitney",
+    "title": "Adventures",
+    "section": "Mt. Whitney",
+    "text": "Mt. Whitney\nIn the spring of my freshman year, I summited Mt. Whitney! This was my first real experience with mountaineering. It was difficult but very worth it!"
+  },
+  {
+    "objectID": "adventures.html#half-dome",
+    "href": "adventures.html#half-dome",
+    "title": "Adventures",
+    "section": "Half Dome",
+    "text": "Half Dome"
+  },
+  {
+    "objectID": "adventures.html#indonesia",
+    "href": "adventures.html#indonesia",
+    "title": "Travels",
+    "section": "Indonesia",
+    "text": "Indonesia\nAfter I stayed in Thailand, I was fortunate to travel to Indonesia, where I spent most of my time enjoying the natural beauty and surfing."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Kate Bierwagen",
+    "section": "",
+    "text": "Hello! My name is Kate Bierwagen and I am currently a third year student at UCSB studying Environmental Studies. This website serves as a portfolio of my academic achievements as well as my personal achievements."
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Kate Bierwagen",
+    "section": "Experience",
+    "text": "Experience\nI am currently a"
+  },
+  {
+    "objectID": "index.html#researcg",
+    "href": "index.html#researcg",
+    "title": "Kate Bierwagen",
+    "section": "Researcg",
+    "text": "Researcg\nI am currently a Scientific Diver for Santa Barbara Coastal LTER and have worked in the Caselle Lab at UCSB where I examined video footage of Rockfish species. I am very interested in fisheries management and exploring the role science can play in creating sustainable solutions."
+  },
+  {
+    "objectID": "about.html#future",
+    "href": "about.html#future",
+    "title": "About",
+    "section": "Future",
+    "text": "Future\nI have had numerous experiences in undergrad that have taught me valuable skills and research. In the future, I hope to get the opportunity to continue to get research experience focused on fisheries management and ocean conservation.\nOutside of my career, I hope to be able to travel more and experience new cultures. I have my eyes on Central America!"
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "Kate Bierwagen",
+    "section": "Research",
+    "text": "Research\nI am currently a Scientific Diver for Santa Barbara Coastal LTER and have worked in the Caselle Lab at UCSB where I examined video footage of Rockfish species. I am very interested in fisheries management and exploring the role science can play in creating sustainable ocean solutions."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Goleta Beach Conservation Plan\n\n\nA written conservation plan for my ENVS 137: Conservation Planning class focused on sediment disposal at Goleta Beach.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nENVS193DS Midterm Project\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -1,0 +1,13 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": []
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/cons-plan2026/index.html",
+      "/projects/envs193ds-midterm/index.html"
+    ]
+  }
+]
