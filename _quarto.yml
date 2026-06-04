@@ -9,19 +9,18 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - href: projects.qmd
+      - href: projects/index.qmd
         text: Projects
       - href: resume.qmd
         text: Resume
       - href: adventures.qmd
-        text: Adventures
+        text: Travels
 format:
   html:
     theme: 
       - cosmo
       - styles.scss
     mainfont: Playfair Display
-    css: styles.scss
     code-fold: true
 
 
