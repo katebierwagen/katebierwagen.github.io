@@ -1,5 +1,10 @@
 ---
-title: "resume"
+title: "Resume"
 format: html
 ---
+
+Updated May 2026. 
+[View](files/resume-katharine_bierwagen.pdf){target="_blank"}
+
+![](resume-katharine_bierwagen.pdf){width="100%" height="700px"}
 
