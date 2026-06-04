@@ -8,7 +8,7 @@ Categories: [R, Data Visualization, Quarto]
 
 ## Context
 
-The directions for this assignment are 
+The directions for this assignment are [at this page.](https://spring-2026.envs-193ds.com/assignments/midterm)
 
 
 ## Product
